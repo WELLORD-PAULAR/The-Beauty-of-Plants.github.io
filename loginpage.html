@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="webpage_styles/pagestyle.css">
+<title>Log in</title>
+
+<!-- Header Section -->
+<header>
+    <div class="nav">
+        <ul class="nav">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="aboutpage.html">About</a></li>
+            <li><a href="contactpage.html">Contacts</a></li>
+        </ul>
+        <ul class="nav">
+            <li><a href="signinpage.html">Sign up</a></li>
+            <li><a href="loginpage.html">Log in</a></li>
+            <li><button class="sidebar-button" onclick="openSidebar()">☘</button></li>
+            <li><img class="navlogo" src="ui_elements/images/logo_element.png" alt="Logo"></li>
+        </ul>
+    </div>
+</header>
+
+<body>
+    <!-- Sidebar Section -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+        <input type="text" id="searchBar" onkeyup="searchSidebar()" placeholder="Search..." class="search-bar">
+        <a href="berry_plants.html">Berries</a>
+        <a href="farm_grown_plants.html">Farm Grown Plants</a>
+        <a href="fruiting_plants.html">Fruiting Plants</a>
+        <a href="fruiting_trees.html">Fruiting Trees</a>
+    </div>
+
+    <div id="allFilesSidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeAllFilesSidebar()">&times;</a>
+        <a href="homepage.html">Home</a>
+        <a href="aboutpage.html">About</a>
+        <a href="contactpage.html">Contacts</a>
+        <a href="signinpage.html">Sign In</a>
+        <a href="loginpage.html">Log In</a>
+        <a href="berry_plants.html">Berry Plants</a>
+        <a href="farm_grown_plants.html">Farm Grown Plants</a>
+        <a href="fruiting_plants.html">Fruiting Plants</a>
+        <a href="fruiting_trees.html">Fruiting Trees</a>
+    </div>
+
+    <button class="top-right-button" onclick="openAllFilesSidebar()">☰</button>
+
+    <!-- Main Content Section -->
+    <div class="main_content">
+        <div class="centered-form">
+            <img class="logo" src="ui_elements/images/logo_element.png" alt="Logo">
+            <h1 class="pretent">Log in</h1>
+            <div class="content">
+                <form id="loginForm">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <input type="submit" value="Log in">
+                </form>
+                <p id="loginResponseMessage" style="color: goldenrod; display: none; justify-content: center;">Login successful!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Section -->
+    <script src="webpage_styles/pagescript.js"></script>
+    <script>
+    function openAllFilesSidebar() {
+        document.getElementById("allFilesSidebar").style.width = "250px";
+    }
+
+    function closeAllFilesSidebar() {
+        document.getElementById("allFilesSidebar").style.width = "0";
+    }
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission
+    document.getElementById("loginResponseMessage").style.display = "block"; // Show the success message
+    setTimeout(function() {
+        window.location.href = "homepage.html"; // Redirect to the homepage
+    }, 1500); // Redirect after 1.5 seconds
+});
+    </script>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p style="text-align: center;">Author: Paular Wellord | <a href="20187455@s.ubaguio.edu">20187455@s.ubaguio.edu</a></p>
+    </footer>
+</body>
+</html>

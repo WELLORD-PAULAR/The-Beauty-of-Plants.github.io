@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="webpage_styles/pagestyle.css">
+<title>Fruiting Plants</title>
+
+<!-- Header Section -->
+<header>
+    <div class="nav">
+        <ul class="nav">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="aboutpage.html">About</a></li>
+            <li><a href="contactpage.html">Contacts</a></li>
+        </ul>
+        <ul class="nav">
+            <li><a href="signinpage.html">Sign up</a></li>
+            <li><a href="loginpage.html">Log in</a></li>
+            <li><button class="sidebar-button" onclick="openSidebar()">☰</button></li>
+            <li><img class="navlogo" src="ui_elements/images/logo_element.png" alt="Logo"></li>
+        </ul>
+    </div>
+</header>
+
+<body>
+    <!-- Sidebar Section -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+        <input type="text" id="searchBar" onkeyup="searchSidebar()" placeholder="Search..." class="search-bar">
+        <a href="#pepper_plant" onclick="scrollToSection('pepper_plant')">Pepper Plant</a>
+        <a href="#eggplant" onclick="scrollToSection('eggplant')">Eggplant</a>
+        <a href="#cucumber_plant" onclick="scrollToSection('cucumber_plant')">Cucumber Plant</a>
+        <a href="#zucchini_plant" onclick="scrollToSection('zucchini_plant')">Zucchini Plant</a>
+        <a href="#melon_plant" onclick="scrollToSection('melon_plant')">Melon Plant</a>
+    </div>
+
+    <div id="allFilesSidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeAllFilesSidebar()">&times;</a>
+        <a href="homepage.html">Home</a>
+        <a href="aboutpage.html">About</a>
+        <a href="contactpage.html">Contacts</a>
+        <a href="signinpage.html">Sign In</a>
+        <a href="loginpage.html">Log In</a>
+        <a href="berry_plants.html">Berry Plants</a>
+        <a href="farm_grown_plants.html">Farm Grown Plants</a>
+        <a href="fruiting_plants.html">Fruiting Plants</a>
+        <a href="fruiting_trees.html">Fruiting Trees</a>
+        <a href="#pepper_plant" onclick="scrollToSection('pepper_plant')">Pepper Plant</a>
+        <a href="#eggplant" onclick="scrollToSection('eggplant')">Eggplant</a>
+        <a href="#cucumber_plant" onclick="scrollToSection('cucumber_plant')">Cucumber Plant</a>
+        <a href="#zucchini_plant" onclick="scrollToSection('zucchini_plant')">Zucchini Plant</a>
+        <a href="#melon_plant" onclick="scrollToSection('melon_plant')">Melon Plant</a>
+    </div>
+
+    <button class="top-right-button" onclick="openAllFilesSidebar()">☰</button>
+
+    <!-- Main Content Section -->
+    <div class="main_content">
+        <img class="logo" src="ui_elements/images/logo_element.png" alt="Logo">
+        <h1 class="pretent">Fruiting Plants</h1>
+        <p class="text">
+            This page is dedicated to documenting a diverse range of fruiting plants found across the globe, celebrating the beauty, variety, 
+            and importance of these remarkable species. 
+            Fruiting plants play a vital role in ecosystems and agriculture, acting as a crucial source of food, nutrition, and biodiversity. 
+            They are the foundation of many natural habitats, supporting wildlife by providing essential food sources for insects, birds, mammals, and other creatures.
+            In addition to their ecological importance, fruiting plants are key components of agricultural systems worldwide. 
+            They are cultivated not only for their edible fruits, which nourish millions of people, but also for their economic value, contributing to local and global food markets. 
+            Whether it's citrus fruits, berries, or tropical staples like bananas and mangoes, fruiting plants are central to the world's food security and the 
+            livelihoods of countless farmers.
+            Beyond their functional value, fruiting plants also bring beauty and joy to landscapes, gardens, and orchards. 
+            Their vibrant flowers, colorful fruits, and lush foliage are often a source of inspiration for gardeners, artists, and nature enthusiasts alike. 
+            Many fruiting plants are also integral to traditional and cultural practices, offering symbolic meanings and forming part of rituals or festivals.
+            On this page, we aim to explore the diverse characteristics, growth requirements, and ecological contributions of fruiting plants from all corners of the Earth. 
+            Through detailed documentation and research, we hope to highlight the significance of these plants, 
+            fostering a deeper appreciation for their roles in both natural ecosystems and human society. 
+            Whether you're a gardener, researcher, or simply a nature lover, we invite you to join us in discovering the fascinating world of fruiting plants.
+        </p>
+
+        <!-- Plant Sections -->
+        <div id="pepper_plant" class="content">
+            <h3 class="pretent">Pepper Plant</h3>
+            <p class="text">
+                Pepper plants are highly versatile and produce a wide variety of peppers, ranging from sweet, 
+                mild varieties like bell peppers to intensely spicy types such as jalapeños and habaneros. 
+                These plants are cultivated in both temperate and tropical regions around the world, 
+                with each climate offering unique growing conditions that influence the flavor and size of the peppers. 
+                Whether for culinary uses, medicinal purposes, or ornamental appeal, peppers are a beloved addition to gardens and farms alike.
+                Peppers generally take about 60 to 90 days to mature, depending on the specific variety and growing conditions. 
+                During their growing season, they undergo several stages of development, from the formation of flowers to the ripening of the fruit. 
+                As peppers mature, they can change in color, flavor, and heat level, with some varieties becoming sweeter as they ripen and others intensifying in spiciness.
+                To thrive, pepper plants require well-drained soil that is rich in nutrients. 
+                The soil should be loose enough to allow the roots to spread easily. 
+                Full sunlight is essential for healthy pepper growth, as peppers need at least 6-8 hours of direct sunlight per day to produce the best yields. 
+                Additionally, they require consistent watering to keep the soil evenly moist, but care should be taken not to overwater, as excessive moisture can lead to root rot. 
+                Pepper plants also benefit from good air circulation, which helps reduce the risk of disease and ensures proper fruit development.
+                Whether grown in home gardens, large-scale farms, or greenhouses, peppers are not only a valuable crop for food production but also play a role in various cuisines around the world, 
+                adding flavor, heat, and color to many dishes. 
+                With their wide range of uses and the variety of species available, pepper plants continue to be a popular choice for both beginner and experienced gardeners alike.
+            </p>
+        </div>
+
+        <div id="eggplant" class="content">
+            <h3 class="pretent">Eggplant</h3>
+            <p class="text">
+                Eggplants, also known as aubergines in some regions, are renowned for their glossy, purple fruits that come in various shapes and sizes. 
+                These vibrant vegetables are a popular ingredient in a wide array of cuisines, from Mediterranean and Middle Eastern to Asian dishes, 
+                and they are used in everything from stir-fries and curries to casseroles, dips, and grilled recipes. 
+                Their unique, slightly bitter taste and spongy texture make them incredibly versatile in the kitchen.
+                Eggplants thrive in warm climates, preferring temperatures between 70°F to 85°F (21°C to 29°C) for optimal growth. 
+                They are particularly well-suited to temperate and subtropical regions with long, hot summers. 
+                Typically, eggplants take about 70 to 85 days to mature from planting, depending on the variety and local growing conditions. 
+                During this time, they undergo several growth stages, including flowering, fruit setting, and ripening. 
+                The glossy purple color of the fruit deepens as it reaches full maturity, although some varieties may have different hues, including white, green, or striped.
+                For healthy growth, eggplant plants require well-drained, loamy soil that retains moisture while allowing excess water to drain freely. 
+                Good soil fertility is also important, so the addition of organic matter or compost can help boost plant health and improve yields. 
+                Eggplants need full sunlight to develop properly, ideally receiving 6 to 8 hours of direct sunlight each day. 
+                Insufficient sunlight can result in poor fruit development and spindly plants.
+                In addition to sunlight, eggplants require regular watering to keep the soil consistently moist, 
+                particularly during the fruiting stage when the plants are actively producing. However, it's crucial to avoid overwatering, 
+                as this can lead to root rot or other water-related issues. 
+                Proper spacing between plants is also important to ensure good airflow and reduce the risk of fungal diseases, 
+                which eggplants can be susceptible to in humid conditions.
+                Eggplants are typically grown from seeds, and in many regions, they are started indoors before being transplanted outdoors once the soil has warmed up. 
+                As they mature, eggplants benefit from occasional pruning to remove dead or unhealthy growth, encouraging better fruit production.
+                Beyond their culinary value, eggplants are also beneficial for soil health due to their deep root systems, which help improve soil structure. 
+                They are relatively easy to grow in home gardens or larger agricultural settings, making them a popular choice for gardeners and farmers alike.
+                While eggplants are commonly associated with dishes like eggplant Parmesan, moussaka, and baba ghanoush, 
+                their versatility in the kitchen makes them a staple in numerous recipes across the globe. 
+                Their importance in both home gardens and commercial agriculture underscores their value not just as a food source, 
+                but as an important crop in global farming systems.
+            </p>
+        </div>
+
+        <div id="cucumber_plant" class="content">
+            <h3 class="pretent">Cucumber Plant</h3>
+            <p class="text">
+                Cucumber plants are widely appreciated for producing crisp, refreshing cucumbers, which are a staple in many cuisines worldwide. These vegetables are often enjoyed raw in salads, sandwiches, and as garnishes, and they also feature in pickles, juices, and even smoothies. Cucumbers have a high water content, making them incredibly hydrating and perfect for warm weather dishes. Their mild flavor and crunchy texture make them a versatile addition to both raw and cooked dishes.
+                Cucumber plants thrive in both temperate and tropical regions, where the growing season provides the warmth and moisture they need to develop. They typically take between 50 and 70 days to mature, depending on the variety and environmental conditions. Cucumbers are fast-growing, and their vines produce numerous fruits over the course of the season. As they mature, the fruit develops a firm skin and a crisp, juicy interior, which can be eaten fresh or preserved through pickling.
+                For optimal growth, cucumber plants require well-drained, loamy soil that is rich in organic matter and nutrients. The soil should be moist, but not waterlogged, as cucumbers are sensitive to root rot and other moisture-related issues. Good soil drainage is essential to prevent stagnant water around the roots, which can lead to fungal infections and diseases.
+                Cucumbers require full sunlight to thrive, with a minimum of 6 to 8 hours of direct sunlight per day. They are sun-loving plants, and insufficient light can result in poor fruit production and smaller, less flavorful cucumbers. In addition to sunlight, cucumbers need consistent and regular watering to maintain moisture in the soil, especially during dry spells or when the plants are actively producing fruit. However, it's important not to overwater, as excessive moisture can cause the plants to develop diseases like mildew or blight.
+                Cucumber plants can be grown in the ground or in raised beds, but they can also be trained to grow vertically on trellises or fences, which helps save space in smaller gardens and makes harvesting easier. Vertical growth also improves air circulation, reducing the risk of fungal diseases. Cucumbers are typically grown from seeds, with many gardeners starting them indoors before transplanting them into the garden once the soil has warmed up.
+                In addition to their refreshing flavor, cucumbers are packed with nutrients, including vitamin K, vitamin C, potassium, and antioxidants like beta-carotene. Their high water content (about 95%) helps with hydration, making them particularly popular in hot climates. Beyond their culinary uses, cucumbers are also valued in beauty and skincare products due to their cooling, soothing properties.
+                Cucumber plants are generally easy to care for, making them a popular choice for both beginner and experienced gardeners. However, they are susceptible to pests such as aphids, cucumber beetles, and spider mites, so it's important to monitor plants regularly for any signs of infestation. Companion planting with herbs like dill, basil, or mint can help deter pests and promote healthy growth.
+                With their quick-growing nature and abundant yields, cucumbers are an ideal crop for home gardens, community gardens, and even larger-scale agricultural operations. Their value as both a nutritious food source and a refreshing, hydrating snack makes them an essential vegetable in global food systems.
+            </p>
+        </div>
+
+        <div id="zucchini_plant" class="content">
+            <h3 class="pretent">Zucchini Plant</h3>
+            <p class="text">
+                Zucchini plants are widely recognized for their fast growth and the versatile zucchinis they produce. These summer squashes are celebrated for their mild flavor, tender texture, and ability to be used in a wide range of dishes, from stir-fries and casseroles to baked goods and even salads. Zucchini is often used in both savory and sweet recipes, and its ability to absorb flavors makes it a favorite ingredient in many cuisines. Its high water content, low calorie count, and rich vitamin C and potassium levels also make it a healthy addition to any diet.
+                Zucchini plants thrive in warm climates, making them well-suited to temperate and subtropical regions where the growing season is long and sunny. Typically, zucchini takes about 45 to 60 days from planting to reach maturity, though this can vary depending on the specific variety and environmental factors. Zucchini plants are fast-growing, often producing a high yield of fruits throughout the growing season. The plants can produce multiple zucchinis at once, and if harvested regularly, they will continue to bear fruit until the first frost.
+                For optimal growth, zucchini plants require well-drained soil that is rich in organic matter. They prefer soil with a slightly acidic to neutral pH, around 6.0 to 7.5, and benefit from the addition of compost or aged manure to improve soil fertility. Zucchini plants need full sunlight, ideally receiving 6 to 8 hours of direct sun each day. Sunlight is crucial for strong, healthy growth, as zucchinis are sun-loving plants that produce the best yields when exposed to plenty of light. Without enough sunlight, zucchini plants may become leggy, with fewer and smaller fruits.
+                Zucchini plants also require consistent watering, especially when the fruits are developing. While they like moisture, the soil should never be waterlogged, as excessive moisture can lead to root rot and other diseases. Regular watering helps keep the plants healthy, but it is important to avoid wetting the leaves, as this can encourage fungal diseases like powdery mildew. Drip irrigation or watering at the base of the plant is ideal, as it minimizes leaf wetness and ensures water reaches the roots directly.
+                Zucchini plants are typically started from seeds, and they can be directly sown into the garden once the soil has warmed up. They are often planted in rows, and with enough space for proper air circulation, they can grow into large, bushy plants. The vines can be quite sprawling, and although zucchini plants do not require trellising like cucumbers, providing them with ample space to spread out ensures healthy growth and fruit production. In small gardens, some gardeners use vertical gardening techniques, such as growing zucchini on a trellis or using containers, to save space.
+                Zucchini is known for its high productivity, with a single plant often yielding several zucchinis over the course of a growing season. Regular harvesting is essential to promote continuous fruit production. It's also important to pick zucchinis when they are still young and tender—if left to mature too long, zucchinis can become large, tough, and bitter.
+                In addition to their culinary uses, zucchinis are low in calories and a good source of nutrients, including vitamins A, C, and B6, as well as folate and fiber. They are also rich in antioxidants, including carotenoids like lutein and zeaxanthin, which are beneficial for eye health. The plant's edible flowers are also prized in culinary circles, often stuffed or fried, adding to the zucchini's versatility in the kitchen.
+                Zucchini plants are generally easy to grow and are a popular choice for home gardeners, as they produce high yields with minimal maintenance. However, they are susceptible to pests such as squash bugs, cucumber beetles, and aphids. It's important to regularly check for signs of infestation and take preventative measures such as using organic insecticides or introducing natural predators. Companion planting with marigolds, nasturtiums, or basil can help deter pests and improve overall plant health.
+                Whether grown in raised beds, containers, or traditional garden rows, zucchini plants are a fantastic choice for gardeners looking to grow a productive, fast-maturing crop. Their rapid growth, coupled with the wide range of culinary uses, makes them a rewarding and enjoyable plant to cultivate.
+            </p>
+        </div>
+
+        <div id="melon_plant" class="content">
+            <h3 class="pretent">Melon Plant</h3>
+            <p class="text">
+                Melon plants are renowned for producing sweet, juicy fruits like cantaloupes, watermelons, honeydews, and other varieties that are a favorite during warm months. These fruits are beloved for their refreshing taste, high water content, and nutritional benefits. Rich in vitamins like vitamin C and A, as well as antioxidants such as beta-carotene, melons not only make for a tasty treat but also contribute to hydration and overall health. Melons are often enjoyed fresh in salads, smoothies, and desserts, or as refreshing snacks during the hot summer months.
+                Melon plants thrive in warm climates, typically found in regions with long, hot summers. They require a consistent warm environment to grow and develop their sweet, fleshy fruits. Depending on the variety and local growing conditions, melons usually take between 70 to 100 days to mature from planting. The exact time to maturity can vary slightly, with smaller varieties maturing more quickly than larger ones like watermelons. During this period, the plants grow rapidly, developing sprawling vines and large, fragrant flowers that eventually lead to fruit formation. The melons mature over the course of the growing season, changing in color and texture, and are typically ready for harvest when they produce a sweet fragrance and their skin changes color (such as the yellowing of cantaloupe or the smooth, shiny skin of watermelon).
+                For optimal growth, melon plants require sandy, well-drained soil that is rich in organic matter. The soil should have a slightly acidic to neutral pH, ideally between 6.0 and 7.5, to allow the plants to absorb nutrients effectively. Proper drainage is critical, as melons are susceptible to root rot if the soil retains too much moisture. In addition to drainage, the soil should be loose and aerated, allowing the roots to spread and access water and nutrients. Adding compost or well-rotted manure to the soil before planting can help improve its fertility and support healthy melon growth.
+                Full sunlight is essential for melon plants. These sun-loving crops require at least 8 to 10 hours of direct sunlight each day to produce high-quality fruits. Without sufficient sunlight, melons may grow slowly and develop poor flavor, lacking the sweetness that makes them so desirable. The full sun allows the plant to photosynthesize efficiently, providing the energy needed for vigorous growth and fruit production.
+                Regular watering is essential for melon plants, particularly during the fruiting stage when the plants are actively developing. Melons have high water content, so consistent moisture is necessary to ensure they grow large and juicy. However, it’s important not to overwater, as too much moisture can cause diseases such as powdery mildew or root rot. Drip irrigation or soaker hoses are ideal for watering, as they direct water to the soil and reduce water on the leaves, helping to prevent fungal infections. It’s also best to water at the base of the plant, avoiding wetting the foliage, especially during the evening when the sun is no longer drying the leaves.
+                Melon plants are typically grown from seeds, though in some areas, transplants may be started indoors before being moved outdoors once the soil has warmed up. Melons are usually grown on mounds or hills, which helps with drainage and allows the plants to spread out. Since melon vines are quite sprawling, they require ample space to grow—often 2 to 3 feet between each plant in rows. In some gardens or smaller spaces, gardeners use vertical gardening techniques, training melon vines to grow on trellises, which helps save space and makes harvesting easier. However, the weight of the melons may require additional support, such as slings or mesh netting, to prevent the fruit from breaking off the vine.
+                Melon plants are relatively low-maintenance but are susceptible to pests such as aphids, cucumber beetles, and melon worms. They can also be affected by diseases like downy mildew, fusarium wilt, and powdery mildew. Regularly inspecting the plants for signs of damage, using natural pest control methods like introducing beneficial insects, and practicing crop rotation can help reduce the risk of pest infestations. Additionally, mulching around the base of the plant can help retain moisture, regulate soil temperature, and keep weeds at bay.
+                Beyond their delicious taste and hydrating properties, melons are important crops in many agricultural systems around the world. They are especially popular in warm regions such as the southern United States, Central and South America, Africa, and parts of Asia. Watermelon, for instance, is a global favorite, while cantaloupes and honeydews are common in many Mediterranean climates. Melon cultivation also plays a significant role in supporting local economies, with both fresh consumption and the processing of melons into juices, dried snacks, and canned products contributing to food industries.
+                Whether grown in a backyard garden or large-scale farms, melons offer a rewarding harvest and a fun-growing experience for both new and experienced gardeners. Their sweet, refreshing taste and vibrant colors make them a beloved fruit, and their growth and care provide valuable lessons in gardening and agriculture.
+            </p>
+        </div>
+    </div>
+
+    <!-- JavaScript Section -->
+    <script src="webpage_styles/pagescript.js"></script>
+    <script>
+    function openAllFilesSidebar() {
+        document.getElementById("allFilesSidebar").style.width = "250px";
+    }
+
+    function closeAllFilesSidebar() {
+        document.getElementById("allFilesSidebar").style.width = "0";
+    }
+    </script>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p style="text-align: center;">Author: Paular Wellord | <a href="20187455@s.ubaguio.edu">20187455@s.ubaguio.edu</a></p>
+    </footer>
+</body>
+</html>

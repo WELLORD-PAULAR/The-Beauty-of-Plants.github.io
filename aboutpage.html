@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="webpage_styles/pagestyle.css">
+<title>About Us</title>
+
+<!-- Header Section -->
+<header>
+    <div class="nav">
+        <ul class="nav">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="aboutpage.html">About</a></li>
+            <li><a href="contactpage.html">Contacts</a></li>
+        </ul>
+        <ul class="nav">
+            <li><a href="signinpage.html">Sign up</a></li>
+            <li><a href="loginpage.html">Log in</a></li>
+            <li><button class="sidebar-button" onclick="openSidebar()">☘</button></li>
+            <li><img class="navlogo" src="ui_elements/images/logo_element.png" alt="Logo"></li>
+        </ul>
+    </div>
+</header>
+
+<body>
+    <!-- Sidebar Section -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+        <input type="text" id="searchBar" onkeyup="searchSidebar()" placeholder="Search..." class="search-bar">
+        <a href="berry_plants.html">Berries</a>
+        <a href="farm_grown_plants.html">Farm Grown Plants</a>
+        <a href="fruiting_plants.html">Fruiting Plants</a>
+        <a href="fruiting_trees.html">Fruiting Trees</a>
+    </div>
+
+    <div id="allFilesSidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeAllFilesSidebar()">&times;</a>
+        <a href="homepage.html">Home</a>
+        <a href="aboutpage.html">About</a>
+        <a href="contactpage.html">Contacts</a>
+        <a href="signinpage.html">Sign In</a>
+        <a href="loginpage.html">Log In</a>
+        <a href="berry_plants.html">Berry Plants</a>
+        <a href="farm_grown_plants.html">Farm Grown Plants</a>
+        <a href="fruiting_plants.html">Fruiting Plants</a>
+        <a href="fruiting_trees.html">Fruiting Trees</a>
+    </div>
+
+    <button class="top-right-button" onclick="openAllFilesSidebar()">☰</button>
+
+    <!-- Main Content Section -->
+    <div class="main_content">
+        <img class="logo" src="ui_elements/images/logo_element.png" alt="Logo">
+        <h1 class="pretent">About Us</h1>
+        <div class="content">
+            <p class="text">
+                This page is mainly a passion project, created to document and preserve information about a wide variety of plants encountered by people from all around the world.
+                It serves as a growing archive where plant enthusiasts, explorers, and everyday nature lovers can share their discoveries and experiences.
+                Our goal is to capture the incredible diversity of plant life, from the most common species to rare and unusual finds, and provide a place where knowledge and appreciation for nature can flourish.
+                Each entry reflects the personal connections and stories behind these plants, adding a unique and meaningful touch to the collection.
+                By gathering contributions from different regions and backgrounds, we hope to build a vibrant, community-driven resource that inspires curiosity and a deeper respect for the natural world.
+                This project is fueled by a love for plants and a desire to celebrate the beauty and wonder they bring to our lives.
+            </p>
+            <p class="text">
+                Explore our collection of plant information, including berries, farm-grown plants, fruiting plants, and fruiting trees.
+                Were excited to offer a space where plant lovers and curious minds alike can dive into the wonderful world of greenery.
+                Beyond our sections on edible and farm-grown plants, we cover a wide range of topics to help you better understand and care for plants of all kinds.
+                Youll find tips on everything from how to keep your houseplants thriving to how plants adapt to different seasons and climates.
+                We also share easy-to-follow advice on planting, growing, and creating your own beautiful garden spaces.
+                Along the way, youll discover fun facts about plant history, their role in ecosystems, and even the newest discoveries from the world of botany.
+                 Whether youre just starting your plant journey or have years of experience, were here to inspire, educate, and grow alongside you!
+            </p>
+        </div>
+
+    </div>
+
+    <!-- JavaScript Section -->
+    <script src="webpage_styles/pagescript.js"></script>
+    <script>
+    function openAllFilesSidebar() {
+        document.getElementById("allFilesSidebar").style.width = "250px";
+    }
+
+    function closeAllFilesSidebar() {
+        document.getElementById("allFilesSidebar").style.width = "0";
+    }
+    </script>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p style="text-align: center;">Author: Paular Wellord | <a href="20187455@s.ubaguio.edu">20187455@s.ubaguio.edu</a></p>
+    </footer>
+</body>
+</html>

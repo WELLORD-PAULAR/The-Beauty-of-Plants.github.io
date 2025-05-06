@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="webpage_styles/pagestyle.css">
+<title>Home Page</title>
+
+<!-- Header Section -->
+<header class="header">
+    <div class="nav">
+        <ul class="nav">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="aboutpage.html">About</a></li>
+            <li><a href="contactpage.html">Contacts</a></li>
+        </ul>
+        <ul class="nav">
+            <li><a href="signinpage.html">Sign up</a></li>
+            <li><a href="loginpage.html">Log in</a></li>
+            <li><button class="sidebar-button" onclick="openSidebar()">☘</button></li>
+            <li><img class="navlogo" src="ui_elements/images/logo_element.png" alt="Logo"></li>
+        </ul>
+    </div>
+</header>
+
+<body>
+    <!-- Sidebar Section -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+        <input type="text" id="searchBar" onkeyup="searchSidebar()" placeholder="Search..." class="search-bar">
+        <a href="berry_plants.html">Berries</a>
+        <a href="farm_grown_plants.html">Farm Grown Plants</a>
+        <a href="fruiting_plants.html">Fruiting Plants</a>
+        <a href="fruiting_trees.html">Fruiting Trees</a>
+    </div>
+    
+    <div id="allFilesSidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeAllFilesSidebar()">&times;</a>
+        <a href="homepage.html">Home</a>
+        <a href="aboutpage.html">About</a>
+        <a href="contactpage.html">Contacts</a>
+        <a href="signinpage.html">Sign In</a>
+        <a href="loginpage.html">Log In</a>
+        <a href="berry_plants.html">Berry Plants</a>
+        <a href="farm_grown_plants.html">Farm Grown Plants</a>
+        <a href="fruiting_plants.html">Fruiting Plants</a>
+        <a href="fruiting_trees.html">Fruiting Trees</a>
+    </div>
+
+    <button class="top-right-button" onclick="openAllFilesSidebar()">☰</button>
+
+    <!-- Main Content Section -->
+    <div class="main_content">
+        <img class="logo" src="ui_elements/images/logo_element.png" alt="Logo">
+        <h1 class="pretent">The Beauty of Plants</h1>
+        <div class="content">
+            <p class="text">
+                This page is dedicated to documenting a wide variety of plants, including but not limited to flowers, fungi, and trees found across multiple countries.
+                Our goal is to create a diverse and informative resource that highlights the beauty and importance of plant life around the world.
+                Each entry showcases detailed information about the plant's characteristics, natural habitat, cultural significance, and ecological role.
+                Whether it's a rare flower from a remote region, a towering tree from a dense forest, or an intriguing fungus hidden in a woodland, we aim to bring these natural wonders to light.
+                By exploring plants from different climates and landscapes, we hope to foster a greater appreciation for the incredible diversity of the plant kingdom. This page is constantly growing, just like the plants we feature, and we invite you to join us on this journey of discovery and learning.
+            </p>
+            <p class="text">
+                Plants are the most significant gifts to humanity.
+                They grow into huge trees or fully-grown plants with a lot of care.
+                Plants help us with various fruits, vegetables, oxygen, etc.
+                and maintain the balance in the ecosystem. Plants also include different types of organisms like bushes, herbs, vines, etc.
+                Plants are inextricably linked to human existence on this planet. Plants are beneficial to us in a variety of ways.
+                Plants offer seeds such as wheat, rice, corn, and other foods that we consume on a daily basis.
+                Plants provide us with oxygen and take in the carbon dioxide that we release.
+                This helps maintain a balance in the ecosystem and reduces global warming.
+                The effects of global warming are known to everyone, and therefore, there have been a lot of efforts and awareness programmes to plant more and more trees to reduce global warming.
+                The plants grow into trees which bind the roots to the soil, which prevents soil erosion.
+                They also absorb other harmful gasses from the atmosphere during the carbon dioxide process.
+                They absorb harmful emissions and other pollutants emitted into the atmosphere by industry and cars, acting as sponges.
+                Therefore, it is essential to plant more and more trees. We celebrate Vanmahotsav week and encourage planting more trees.
+            </p>
+        </div>
+    </div>
+
+    <!-- JavaScript Section -->
+    <script src="webpage_styles/pagescript.js"></script>
+    <script>
+    function openAllFilesSidebar() {
+        document.getElementById("allFilesSidebar").style.width = "250px";
+    }
+
+    function closeAllFilesSidebar() {
+        document.getElementById("allFilesSidebar").style.width = "0";
+    }
+    </script>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p style="text-align: center;">Author: Paular Wellord | <a href="20187455@s.ubaguio.edu">20187455@s.ubaguio.edu</a></p>
+    </footer>
+</body>
+</html>

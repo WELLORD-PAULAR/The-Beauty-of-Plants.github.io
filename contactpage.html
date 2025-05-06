@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="webpage_styles/pagestyle.css">
+<title>Contact Us</title>
+
+<!-- Header Section -->
+<header>
+    <div class="nav">
+        <ul class="nav">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="aboutpage.html">About</a></li>
+            <li><a href="contactpage.html">Contacts</a></li>
+        </ul>
+        <ul class="nav">
+            <li><a href="signinpage.html">Sign up</a></li>
+            <li><a href="loginpage.html">Log in</a></li>
+            <li><button class="sidebar-button" onclick="openSidebar()">☘</button></li>
+            <li><img class="navlogo" src="ui_elements/images/logo_element.png" alt="Logo"></li>
+        </ul>
+    </div>
+</header>
+
+<body>
+    <!-- Sidebar Section -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+        <input type="text" id="searchBar" onkeyup="searchSidebar()" placeholder="Search..." class="search-bar">
+        <a href="berry_plants.html">Berries</a>
+        <a href="farm_grown_plants.html">Farm Grown Plants</a>
+        <a href="fruiting_plants.html">Fruiting Plants</a>
+        <a href="fruiting_trees.html">Fruiting Trees</a>
+    </div>
+
+    <div id="allFilesSidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeAllFilesSidebar()">&times;</a>
+        <a href="homepage.html">Home</a>
+        <a href="aboutpage.html">About</a>
+        <a href="contactpage.html">Contacts</a>
+        <a href="signinpage.html">Sign In</a>
+        <a href="loginpage.html">Log In</a>
+        <a href="berry_plants.html">Berry Plants</a>
+        <a href="farm_grown_plants.html">Farm Grown Plants</a>
+        <a href="fruiting_plants.html">Fruiting Plants</a>
+        <a href="fruiting_trees.html">Fruiting Trees</a>
+    </div>
+
+    <button class="top-right-button" onclick="openAllFilesSidebar()">☰</button>
+
+    <!-- Main Content Section -->
+    <div class="main_content">
+        <img class="logo" src="ui_elements/images/logo_element.png" alt="Logo">
+        <h1 class="pretent">Contact Us</h1>
+        <div class="content">
+            <p class="text">
+                Welcome to our Contact page! We'd love to hear from you and stay connected.
+                For direct inquiries, feel free to send us an email anytime. Join our community on Facebook for updates, news, and friendly conversation.
+                Check out our YouTube channel for the latest videos, tutorials, and more.
+                You can also follow us on Spotify to enjoy curated playlists and special content.
+                For real-time chats, exclusive events, and deeper discussions, hop into our Discord server.
+                No matter where you connect with us, we're excited to have you as part of our growing community!
+            </p>
+        </div>
+        <div class="content contacts-list">
+            <ul class="list">
+                <li><a href="mailto:20187455@s.ubaguio.edu">Email Us Here!</a></li>
+                <li><a href="https://www.facebook.com/wellord.paular" target="_blank">Our Facebook</a></li>
+                <li><a href="https://www.youtube.com/@Bamboozle-t1e" target="_blank">Our YouTube Channel</a></li>
+                <li><a href="https://open.spotify.com/user/31onz3gsivg262vcf2p7smklxbcq" target="_blank">Our Spotify</a></li>
+                <li><a href="https://discordapp.com/users/meateokaiser" target="_blank">Our Discord</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- JavaScript Section -->
+    <script src="webpage_styles/pagescript.js"></script>
+    <script>
+    function openAllFilesSidebar() {
+        document.getElementById("allFilesSidebar").style.width = "250px";
+    }
+
+    function closeAllFilesSidebar() {
+        document.getElementById("allFilesSidebar").style.width = "0";
+    }
+    </script>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p style="text-align: center;">Author: Paular Wellord | <a href="20187455@s.ubaguio.edu">20187455@s.ubaguio.edu</a></p>
+    </footer>
+</body>
+</html>

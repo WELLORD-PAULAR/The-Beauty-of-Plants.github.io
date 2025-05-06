@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="webpage_styles/pagestyle.css">
+<title>Farm-Grown Plants</title>
+
+<!-- Header Section -->
+<header>
+    <div class="nav">
+        <ul class="nav">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="aboutpage.html">About</a></li>
+            <li><a href="contactpage.html">Contacts</a></li>
+        </ul>
+        <ul class="nav">
+            <li><a href="signinpage.html">Sign up</a></li>
+            <li><a href="loginpage.html">Log in</a></li>
+            <li><button class="sidebar-button" onclick="openSidebar()">☰</button></li>
+            <li><img class="navlogo" src="ui_elements/images/logo_element.png" alt="Logo"></li>
+        </ul>
+    </div>
+</header>
+
+<body>
+    <!-- Sidebar Section -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+        <input type="text" id="searchBar" onkeyup="searchSidebar()" placeholder="Search..." class="search-bar">
+        <a href="#corn" onclick="scrollToSection('corn')">Corn</a>
+        <a href="#wheat" onclick="scrollToSection('wheat')">Wheat</a>
+        <a href="#soybeans" onclick="scrollToSection('soybeans')">Soybeans</a>
+        <a href="#rice" onclick="scrollToSection('rice')">Rice</a>
+        <a href="#potatoes" onclick="scrollToSection('potatoes')">Potatoes</a>
+        <a href="#tomatoes" onclick="scrollToSection('tomatoes')">Tomatoes</a>
+    </div>
+
+    <div id="allFilesSidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeAllFilesSidebar()">&times;</a>
+        <a href="homepage.html">Home</a>
+        <a href="aboutpage.html">About</a>
+        <a href="contactpage.html">Contacts</a>
+        <a href="signinpage.html">Sign In</a>
+        <a href="loginpage.html">Log In</a>
+        <a href="berry_plants.html">Berry Plants</a>
+        <a href="farm_grown_plants.html">Farm Grown Plants</a>
+        <a href="fruiting_plants.html">Fruiting Plants</a>
+        <a href="fruiting_trees.html">Fruiting Trees</a>
+        <a href="#corn" onclick="scrollToSection('corn')">Corn</a>
+        <a href="#wheat" onclick="scrollToSection('wheat')">Wheat</a>
+        <a href="#soybeans" onclick="scrollToSection('soybeans')">Soybeans</a>
+        <a href="#rice" onclick="scrollToSection('rice')">Rice</a>
+        <a href="#potatoes" onclick="scrollToSection('potatoes')">Potatoes</a>
+        <a href="#tomatoes" onclick="scrollToSection('tomatoes')">Tomatoes</a>
+    </div>
+
+    <button class="top-right-button" onclick="openAllFilesSidebar()">☰</button>
+
+    <!-- Main Content Section -->
+    <div class="main_content">
+        <img class="logo" src="ui_elements/images/logo_element.png" alt="Logo">
+        <h1 class="pretent">Farm-Grown Plants</h1>
+        <p class="text">
+            This page is dedicated to documenting a wide variety of plants commonly grown on farms around the world. 
+            These plants play a crucial role in sustaining human life, forming the foundation of our food systems and agricultural industries.
+            Farm-grown plants include a diverse range of crops such as grains, vegetables, legumes, fruits, and fiber plants, 
+            each carefully cultivated to meet the needs of local and global communities. They are essential for food production, 
+            providing not only daily nourishment but also raw materials for countless products we rely on.
+            Beyond feeding populations, these plants support agricultural economies, create employment opportunities, and shape rural landscapes and traditions. 
+            They are deeply intertwined with cultural heritage, seasonal cycles, and innovations in sustainable farming practices.
+            Through this page, we aim to explore the characteristics, growing requirements, and global importance of farm-grown plants, 
+            highlighting their invaluable contributions to both human society and the environment.
+        </p>
+
+        <!-- Plant Sections -->
+        <div id="corn" class="content">
+            <h3 class="pretent">Corn</h3>
+            <p class="text">Corn, also known as maize, is one of the most widely cultivated and versatile crops in the world. 
+                Originally domesticated thousands of years ago in Central America, it has become a global agricultural staple, 
+                playing a major role in feeding people and livestock alike. 
+                Corn is used in a wide range of products, from fresh food and processed goods like cornmeal and syrup to animal feed and 
+                industrial materials such as biofuels and biodegradable plastics.
+                Corn plants typically take between 60 and 100 days to reach maturity, depending on the variety and growing conditions. 
+                To thrive, corn requires well-drained, nutrient-rich soil, plenty of direct sunlight, and consistent watering throughout the growing season. 
+                Proper spacing, pest management, and soil fertilization also contribute to healthy, high-yield crops.
+                Because of its adaptability and high yield potential, 
+                corn is an essential part of many farming systems and a key resource in global food security and industry.
+            </p>
+        </div>
+
+        <div id="wheat" class="content">
+            <h3 class="pretent">Wheat</h3>
+            <p class="text">
+                Wheat is one of the world's most important staple crops, essential for producing flour used in making bread, pasta, pastries, cereals, and 
+                countless other food products. 
+                Its cultivation dates back thousands of years and has been a cornerstone of human civilization, 
+                supporting the growth of societies across Europe, Asia, and the Middle East.
+                Wheat thrives in temperate regions where the climate offers a balance of cool and warm seasons. 
+                Typically, wheat plants take about 120 days to mature, though this can vary slightly depending on the variety and local conditions. 
+                Successful growth requires well-drained, fertile soil, moderate rainfall, and ample exposure to full sunlight. 
+                Proper soil management, crop rotation, and disease control practices are important to maintain healthy wheat fields and achieve strong yields.
+                Beyond its role in human diets, wheat is also vital for global economies, providing a significant source of income for farmers and serving as
+                a major commodity in international trade.
+            </p>
+        </div>
+
+        <div id="soybeans" class="content">
+            <h3 class="pretent">Soybeans</h3>
+            <p class="text">
+                Soybeans are one of the most versatile and economically important crops grown around the world. 
+                Originating in East Asia, soybeans are used in a wide range of products, including food items like tofu, soy milk, tempeh, and soy sauce, 
+                as well as animal feed, oil, and even biofuels. 
+                They are a key source of plant-based protein and essential oils, making them crucial not only for human consumption but also in various industrial applications.
+                Soybeans are typically grown in temperate and subtropical regions, where the climate is warm and the growing season is long enough for them to mature. 
+                Depending on the variety and environmental conditions, soybeans typically take between 80 and 120 days to mature, with growth stages that include flowering, 
+                pod development, and seed filling.
+                To thrive, soybeans require well-drained soil rich in nutrients and organic matter. They also need full sunlight and moderate rainfall for optimal growth. 
+                While they are relatively hardy, soybeans benefit from crop rotation to help manage soil health and reduce pest and disease pressures. 
+                Additionally, soybeans are known for their ability to fix nitrogen in the soil, which helps improve soil fertility for subsequent crops in rotation.
+                Beyond their use in food and animal feed, soybeans have become a critical crop in the renewable energy industry. 
+                Soybean oil is a major feedstock for biodiesel production, offering a sustainable, plant-based alternative to fossil fuels. 
+                This eco-friendly aspect of soybeans is gaining increasing importance in efforts to reduce global greenhouse gas emissions.
+                Globally, soybeans are one of the top agricultural commodities, with the United States, Brazil, and Argentina being the largest producers.
+                As demand for plant-based proteins and renewable energy continues to rise, the importance of soybeans in both agriculture and industry is expected to grow.
+            </p>
+        </div>
+
+        <div id="rice" class="content">
+            <h3 class="pretent">Rice</h3>
+            <p class="text">
+                Rice is one of the most important staple foods in the world, providing sustenance for more than half of the global population. 
+                It is a key component of the diet in many Asian, African, and Latin American countries, where it forms the base of daily meals. 
+                Rice is incredibly versatile, used in a variety of dishes, from simple steamed rice to more complex dishes like sushi, risotto, and fried rice.
+                Typically, rice is grown in flooded fields known as paddies, which are flooded with water for much of the growing season. 
+                This unique growing method helps reduce competition from weeds and provides the ideal conditions for rice plants to thrive. 
+                Rice is generally grown in tropical and subtropical regions, although it can also be cultivated in temperate zones, 
+                provided that the growing season is long enough.
+                Rice plants typically take between 120 to 150 days to mature, depending on the variety and local climate. 
+                During this time, they go through several stages of growth, including germination, tillering (production of side shoots), flowering, and grain filling. 
+                For optimal growth, rice requires specific soil conditions, such as clay or loamy soil that can retain water while still allowing for proper root development.
+                In addition to these soil requirements, rice needs abundant water and warm temperatures to grow effectively. Water management is crucial, as rice paddies are often flooded for extended periods to provide the right conditions for the plants. This is why rice farming is typically found in regions with sufficient rainfall or access to irrigation systems.
+                Rice farming plays a central role in the economies of many developing nations, where it is not only a major food source but also a significant source of income. 
+                Beyond its importance in human nutrition, rice paddies also provide vital habitats for wildlife, including various species of birds, amphibians, and insects.
+                Despite its widespread cultivation, rice farming faces challenges related to water use, climate change, and land availability. 
+                Innovations in rice farming, such as water-saving techniques and the development of drought-resistant varieties, 
+                are helping to address some of these issues and ensure that rice remains a sustainable and reliable food source for generations to come.
+            </p>
+        </div>
+
+        <div id="potatoes" class="content">
+            <h3 class="pretent">Potatoes</h3>
+            <p class="text">
+                Potatoes are one of the most versatile and widely consumed root vegetables in the world, forming the foundation of countless dishes across diverse cuisines. 
+                From mashed potatoes and fries to baked potatoes, soups, and salads, potatoes can be prepared in nearly endless ways, making them a staple in kitchens everywhere. 
+                They are rich in carbohydrates, providing a significant energy source, and contain essential vitamins and minerals, including vitamin C, potassium, and fiber.
+                Potatoes are typically grown in temperate regions with cool to mild climates, as they thrive in these conditions and are sensitive to extreme heat. 
+                Depending on the variety and growing conditions, potatoes typically take between 70 to 120 days to mature. 
+                During this time, they go through several growth stages, including sprouting, flowering, and tuber formation beneath the soil surface.
+                To grow successfully, potatoes require well-drained, loose soil that allows their tubers to develop without obstruction. 
+                Heavy, compacted soil can hinder growth, leading to smaller or misshapen potatoes. 
+                They also need full sunlight to grow strong, healthy plants and consistent watering to keep the soil evenly moist throughout the growing season. 
+                However, too much water or poor drainage can lead to root rot, so it's important to strike the right balance.
+                Potatoes are typically grown in rows, with each seed potato (a small potato or part of a potato) planted in the soil to sprout and develop into a full-grown plant. 
+                As the plants grow, they require attention to ensure they have adequate space for proper development. 
+                In some areas, potatoes are grown in raised beds or hills, which allows for better drainage and easier harvesting.
+                Potatoes are a crucial crop for global food security, as they are both a reliable and high-yielding source of food. 
+                They are grown on every continent, from large-scale commercial farms to small family plots. 
+                The versatility of potatoes in terms of both culinary use and nutritional value makes them a key player in feeding populations worldwide.
+                In addition to their value as food, potatoes also have economic importance in agriculture, 
+                contributing significantly to the economies of countries such as China, India, Russia, and the United States, which are major producers. 
+                Furthermore, the development of disease-resistant potato varieties and improved farming techniques continues to ensure that potatoes remain a 
+                sustainable and efficient crop for the future.
+            </p>
+        </div>
+
+        <div id="tomatoes" class="content">
+            <h3 class="pretent">Tomatoes</h3>
+            <p class="text">
+                Tomatoes are one of the most popular and widely cultivated fruits around the world, prized for their versatility in cooking and 
+                fresh use in salads, sauces, soups, salsas, and countless other dishes. 
+                Technically a fruit, tomatoes are often treated as a vegetable in culinary contexts due to their savory flavor. 
+                They are rich in vitamins, especially vitamin C, potassium, and antioxidants like lycopene, which is associated with various health benefits, 
+                including heart health and cancer prevention.
+                Tomatoes are grown in a wide range of climates, from warm Mediterranean regions to temperate zones, making them adaptable to many different environments. 
+                They thrive in areas where the growing season is warm and consistent, 
+                although certain varieties can tolerate cooler temperatures or extended seasons with the help of greenhouses. 
+                Depending on the variety and local conditions, tomatoes typically take about 60 to 80 days to mature from planting, 
+                though some heirloom or larger varieties may take a bit longer.
+                To grow successfully, tomatoes require well-drained soil, rich in organic matter and nutrients. 
+                A slightly acidic pH is ideal, typically around 6.0 to 6.8. Full sunlight is essential, 
+                as tomatoes need at least 6 to 8 hours of direct sunlight daily to produce strong plants and flavorful fruit. 
+                Tomatoes also need regular watering, particularly when the fruit is setting, but care must be taken not to overwater them. 
+                Too much water, especially when the soil isn't well-drained, can lead to diseases like root rot or fungal infections.
+                Tomato plants are typically started from seeds, with many gardeners starting them indoors before transplanting them into the garden when the weather warms up. 
+                Tomatoes are often grown in rows or on trellises to support the plants as they grow tall, 
+                especially indeterminate varieties that keep producing fruit throughout the growing season. Determinate varieties, on the other hand, 
+                are more compact and tend to ripen all at once, making them ideal for canning or processing.
+                Tomatoes are not only important for their culinary uses but also have significant economic and agricultural value. 
+                They are one of the most widely grown crops globally, with major production areas in countries like China, India, the United States, and Italy. 
+                Beyond their role in fresh markets, tomatoes are also critical for the processing industry, 
+                where they are turned into products such as tomato paste, ketchup, and canned tomatoes.
+                Tomato farming faces challenges related to pests, diseases, and climate conditions, but advances in agricultural technology, 
+                including pest-resistant varieties and improved irrigation practices, continue to support tomato production. 
+                The tomato is not just a beloved fruit in the kitchen—it is an essential crop in global food systems and agricultural economies.
+            </p>
+        </div>
+    </div>
+
+    <!-- JavaScript Section -->
+    <script src="webpage_styles/pagescript.js"></script>
+    <script>
+    function openAllFilesSidebar() {
+        document.getElementById("allFilesSidebar").style.width = "250px";
+    }
+
+    function closeAllFilesSidebar() {
+        document.getElementById("allFilesSidebar").style.width = "0";
+    }
+    </script>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p style="text-align: center;">Author: Paular Wellord | <a href="20187455@s.ubaguio.edu">20187455@s.ubaguio.edu</a></p>
+    </footer>
+</body>
+</html>
